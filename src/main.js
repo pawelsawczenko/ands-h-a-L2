@@ -21,7 +21,7 @@ console.log(add(1)(2)); // 3
 Array.prototype.myFilter = function (callbackFn) {
   const filteredArr = [];
 
-  for (let i = 0; i < this.length - 1; i++) {
+  for (let i = 0; i < this.length; i++) {
     if (callbackFn(this[i], i, this)) {
       filteredArr.push(this[i]);
     }
